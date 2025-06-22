@@ -35,6 +35,22 @@ app.get('/butterfly-4', (req, res) => {
     res.render('butterfly4');  
 });
 
+app.get('/', (req, res) => {
+    res.render('index', { title: 'Home' });  
+});
+
+app.get('/about', (req, res) => {
+    res.render('about', { title: 'About Us' });  
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact', { title: 'Contact Us' });  
+});
+
+
+app.get('/butterfly-1', (req, res) => {
+    res.render('butterfly1', { title: 'Butterfly 1' });  
+});
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
